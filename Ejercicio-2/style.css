@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 50px;
+}
+h1 {
+  color: #333;
+}
+form {
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.error {
+        color: red;
+      }
