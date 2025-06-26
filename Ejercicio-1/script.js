@@ -4,15 +4,24 @@ const operacion = document.getElementById("operacion");
 const botonCalcular = document.getElementById("calcular");
 const resultado = document.getElementById("resultado");
 
-//deshabilitamos el boton si se selecciona Dividir
+//Se crea una funcion para validar si el segundo numero es cero asi el boton se deshabilita
 
-operacion.addEventListener("change", () => {
-    if (operacion.value === "dividir")  {
+function verificarValor() {
+    const opera = operacion.value;
+    const n2 = Number(numero2.value);
+
+    if (opera === "dividir" && n2 === 0) {
         botonCalcular.disabled = true;
     } else {
         botonCalcular.disabled = false;
     }
-});
+}
+
+//se agrega listeners a ambos elementos para que se active o desactive automaticamente dependiendo de lo que se seleccione
+
+operacion.addEventListener("change", verificarValor);
+numero2.addEventListener("input", verificarValor);
+
 
 //calculo
 
@@ -30,6 +39,9 @@ botonCalcular.addEventListener("click", () => {
             break;
         case "multiplicar":
                     result= n1 * n2;
+            break;
+        case "dividir":
+                result = n1 / n2;
             break;
 
     }
