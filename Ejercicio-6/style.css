@@ -1,0 +1,33 @@
+h1,
+h3 {
+    text-align: center;
+    color: #333;
+}
+
+.mensaje {
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.amarillo {
+  background-color: #fff8b3;
+  color: #665c00;
+}
+
+.verde {
+  background-color: #c9f5c9;
+  color: #1a6600;
+}
+
+.naranja {
+  background-color: #ffd8a8;
+  color: #b35e00;
+}
+
+.rojo {
+  background-color: #ffb3b3;
+  color: #800000;
+}
